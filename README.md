@@ -5,6 +5,7 @@ A simple yet powerful **Task Management System** built using the **MERN** stack 
 It helps teams manage, assign, and track tasks with file attachments and detailed status tracking.
 
 ---
+🔗 [Live Link](https://panscience-task-management-frontend.onrender.com/)
 
 ## 🚀 Key Features
 
@@ -125,5 +126,8 @@ npm run dev
 * Ready-to-use **Docker + Postman workspace**
 
 ---
-
+### Contact Me-
+Mohd Taha Khan
+IET LUCKNOW
+mohdtahakhan13@gmail.com
 
