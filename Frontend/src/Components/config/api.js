@@ -1,5 +1,5 @@
 // Get the backend URL from environment variables with a fallback
-const BACKEND_URL ="http://localhost:5000";
+const BACKEND_URL ="https://panscience-task-management-backend.onrender.com";
 
 
 export const API_ENDPOINTS = {
