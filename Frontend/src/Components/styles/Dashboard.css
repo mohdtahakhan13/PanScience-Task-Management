@@ -1,0 +1,256 @@
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .welcome-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .stats-card {
+    margin-bottom: 1rem;
+  }
+
+  .stats-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  color: #3182ce;
+}
+
+/* Error State */
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 3rem;
+  color: #f56565;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #718096;
+  margin-bottom: 1rem;
+}  */
+
+.dashboard-container {
+  padding: 2rem;
+  min-height: calc(100vh - 64px);
+  background: #121212; /* Dark background */
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); /* Darker blue gradient */
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f8fafc; /* Brighter text for better contrast */
+}
+
+.stats-card {
+  background: #1e293b; /* Dark card background */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #334155; /* Dark border */
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.stats-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.stats-icon.total {
+  background: rgba(56, 182, 255, 0.1); /* Brighter blue */
+  color: #38b6ff;
+}
+
+.stats-icon.completed {
+  background: rgba(74, 222, 128, 0.1); /* Brighter green */
+  color: #4ade80;
+}
+
+.stats-icon.in-progress {
+  background: rgba(253, 230, 138, 0.1); /* Brighter yellow */
+  color: #fde68a;
+}
+
+.stats-icon.pending {
+  background: rgba(248, 113, 113, 0.1); /* Brighter red */
+  color: #f87171;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #f8fafc; /* Bright text */
+}
+
+.stats-label {
+  color: #94a3b8; /* Lighter muted text */
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.quick-actions {
+  margin-top: 2rem;
+}
+
+.action-card {
+  background: #1e293b; /* Dark card background */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #334155; /* Dark border */
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-color: #38b6ff; /* Brighter blue border on hover */
+}
+
+.action-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #38b6ff; /* Brighter blue */
+}
+
+.action-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f8fafc; /* Bright text */
+}
+
+.action-description {
+  color: #94a3b8; /* Lighter muted text */
+  font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .welcome-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .stats-card {
+    margin-bottom: 1rem;
+  }
+
+  .stats-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  color: #38b6ff; /* Brighter blue */
+}
+
+/* Error State */
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 3rem;
+  color: #f87171; /* Brighter red */
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #94a3b8; /* Lighter muted text */
+  margin-bottom: 1rem;
+}

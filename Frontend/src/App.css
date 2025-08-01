@@ -1,0 +1,141 @@
+
+/* Dark Theme Layout Styles */
+.authenticated-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0F172A  ;
+}
+
+.authenticated-content {
+  flex: 1;
+  padding-top: 76px; /* Height of the navbar */
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #0F172A  ;
+  color: #e2e8f0;
+}
+
+/* Public layout styles - Dark Mode */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0F172A  ;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #0F172A  ;
+  color: #e2e8f0;
+}
+
+/* Navbar z-index remains the same */
+.authenticated-layout .navbar-custom {
+  z-index: 1030;
+}
+
+/* Responsive padding - Dark Mode */
+@media (max-width: 768px) {
+  .authenticated-content {
+    padding-top: 64px;
+  }
+}
+
+/* Authenticated layout specific styles - Dark Mode */
+.app-container:has(> .navbar) .main-content {
+  background-color: #1a1a1a;
+  padding-top: 2rem;
+}
+
+/* Public layout specific styles - Dark Mode */
+.app-container:not(:has(> .navbar)) .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #1e0b36, #0d2b5e);
+}
+
+/* Navbar stays on top */
+.navbar {
+  z-index: 1000;
+}
+
+/* Authentication form styles - Dark Mode */
+.auth-form-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+  border: 1px solid #333;
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #f8f9fa;
+}
+
+/* Form input styles for dark mode */
+.auth-form-container input {
+  background-color: #2d2d2d !important;
+  color: #f8f9fa !important;
+  border-color: #444 !important;
+}
+
+.auth-form-container input:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25) !important;
+}
+
+/* Button styles for dark mode */
+.auth-form-container .btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.auth-form-container .btn-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Link styles for dark mode */
+.auth-form-container a {
+  color: #93c5fd;
+}
+
+.auth-form-container a:hover {
+  color: #60a5fa;
+}
+
+/* Responsive adjustments - Dark Mode */
+@media (max-width: 768px) {
+  .auth-form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+    background: #1e1e1e;
+  }
+}
+
+/* Additional dark mode enhancements */
+.auth-form-container .form-text {
+  color: #a1a1a1 !important;
+}
+
+.auth-form-container .alert {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #f8f9fa;
+}
+
+/* Dark mode toggle transition */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

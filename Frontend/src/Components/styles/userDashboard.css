@@ -1,0 +1,126 @@
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    text-align: center;
+    border: 1px solid #333; /* Subtle border */
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color: #f0f0f0; /* Light text */
+    margin-bottom: 20px;
+}
+
+/* Task Cards - Dark Theme */
+.task-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.task-card {
+    background: #2d2d2d; /* Dark card background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #3a3a3a; /* Subtle border */
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-color: #4a90e2; /* Accent border on hover */
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a90e2; /* Brighter blue for titles */
+}
+
+.task-description {
+    font-size: 14px;
+    color: #b0b0b0; /* Light gray for readability */
+}
+
+.task-deadline, .task-details, .task-status {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #a0a0a0; /* Slightly muted text */
+}
+
+.task-status {
+    font-weight: 500;
+}
+
+/* Status-specific colors for dark theme */
+.task-status.completed {
+    color: #4ade80; /* Bright green */
+}
+
+.task-status.in-progress {
+    color: #fbbf24; /* Bright yellow */
+}
+
+.task-status.pending {
+    color: #f87171; /* Bright red */
+}
+
+/* Animations - No changes needed as they're color-independent */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.bounce-in {
+    animation: bounceIn 0.6s ease-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+/* Additional dark theme enhancements */
+.task-card .task-deadline::before {
+    content: "⏰ ";
+    color: #fbbf24; /* Yellow for time icon */
+}
+
+.task-card .task-details::before {
+    content: "ℹ️ ";
+    color: #4a90e2; /* Blue for info icon */
+}
