@@ -170,6 +170,15 @@ function TaskHistory() {
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
+              <MDBCol lg="3" md="6">
+              <MDBCard className="stat-card h-100">
+                <MDBCardBody className="text-center">
+                  <MDBIcon fas icon="chart-line" size="2x" className="mb-3 text-success" />
+                  <h3 className="h4 mb-2">{((stats.highPriority + stats.mediumPriority) / stats.total * 100).toFixed(0)}%</h3>
+                  <p className="text-muted mb-0">High/Medium Priority Ratio</p>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
             <MDBCol lg="3" md="6">
               <MDBCard className="stat-card h-100">
                 <MDBCardBody className="text-center">
@@ -188,15 +197,7 @@ function TaskHistory() {
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
-            <MDBCol lg="3" md="6">
-              <MDBCard className="stat-card h-100">
-                <MDBCardBody className="text-center">
-                  <MDBIcon fas icon="chart-line" size="2x" className="mb-3 text-success" />
-                  <h3 className="h4 mb-2">{((stats.highPriority + stats.mediumPriority) / stats.total * 100).toFixed(0)}%</h3>
-                  <p className="text-muted mb-0">High/Medium Priority Ratio</p>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
+          
           </MDBRow>
 
           {/* Filters and Controls */}

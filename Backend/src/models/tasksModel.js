@@ -26,11 +26,23 @@ const taskSchema = new mongoose.Schema({
     deadline: {
         type: Date
     },
+  
     priority: {
         type: String,
         enum: ["low", "medium", "high"],
         default: "medium"
     },
+      documents: [{
+        filename: String,
+        originalname: String,
+        path: String,
+        size: Number,
+        mimetype: String,
+        uploadDate: {
+            type: Date,
+            default: Date.now
+        }
+    }],
     version: {
         type: Number,
         default: 0

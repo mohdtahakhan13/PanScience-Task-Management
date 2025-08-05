@@ -138,6 +138,7 @@ export const updatePasswordController = async function (req, res) {
    });
   }
 };
+
 export const deleteUserController = async function (req, res) {
   try {
       const userId = req.params.id;
