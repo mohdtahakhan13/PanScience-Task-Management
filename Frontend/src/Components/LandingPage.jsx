@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { ClipboardList } from 'lucide-react';
+import { ClipboardList, ArrowRight, Shield, User } from 'lucide-react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './styles/LandingPage.css';
 
@@ -25,42 +25,53 @@ const LandingPage = () => {
               <div className="content-wrapper">
                 <div className="logo-container">
                   <ClipboardList size={48} className="logo" />
+                  <div className="logo-glow"></div>
                 </div>
                 
-                <h1 className="main-title">
-                  TaskMate
-                  <span className="highlight-bar"></span>
-                </h1>
+                <div className="title-group">
+                  <h1 className="main-title">
+                    Task<span className="text-accent">Mate</span>
+                  </h1>
+                  <p className="subtitle">Efficient Task Management System</p>
+                  <div className="highlight-bar"></div>
+                </div>
                 
-                <h2 className="landing-title">Choose Your Role</h2>
-                
-                <p className="landing-description">
-                  Select whether you want to access the application as an Admin or as a User. 
-                  Choose the appropriate role and get started with efficient task management!
-                </p>
-                
-                <div className="button-container">
-                  <Button 
-                    onClick={() => handleNavigation('login-admin')} 
-                    className="landing-button admin-btn"
-                    size="lg"
-                  >
-                    <span className="button-content">
-                      <span className="button-text">Admin Access</span>
-                      <span className="button-icon">→</span>
-                    </span>
-                  </Button>
+                <div className="role-selection">
+                  <h2 className="section-title">
+                    <span className="title-decoration"></span>
+                    Select Your Access Level
+                    <span className="title-decoration"></span>
+                  </h2>
                   
-                  <Button 
-                    onClick={() => handleNavigation('login-user')} 
-                    className="landing-button user-btn"
-                    size="lg"
-                  >
-                    <span className="button-content">
-                      <span className="button-text">User Access</span>
-                      <span className="button-icon">→</span>
-                    </span>
-                  </Button>
+                  <p className="section-description">
+                    Choose your role to access the task management system with appropriate permissions and features.
+                  </p>
+                  
+                  <div className="button-container">
+                    <Button 
+                      onClick={() => handleNavigation('login-admin')} 
+                      className="landing-button admin-btn"
+                      size="lg"
+                    >
+                      <span className="button-content">
+                        <Shield size={20} className="me-2" />
+                        <span className="button-text">Administrator</span>
+                        <ArrowRight size={18} className="button-icon" />
+                      </span>
+                    </Button>
+                    
+                    <Button 
+                      onClick={() => handleNavigation('login-user')} 
+                      className="landing-button user-btn"
+                      size="lg"
+                    >
+                      <span className="button-content">
+                        <User size={20} className="me-2" />
+                        <span className="button-text">Team Member</span>
+                        <ArrowRight size={18} className="button-icon" />
+                      </span>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </Col>
