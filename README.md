@@ -5,7 +5,32 @@ A simple yet powerful **Task Management System** built using the **MERN** stack 
 It helps teams manage, assign, and track tasks with file attachments and detailed status tracking.
 
 ---
-🔗 [Live Link](https://panscience-task-management-frontend.onrender.com/)
+🔗 [Live Link](https://panscience-task-management-frontend.onrender.com/) 
+
+# 🔗 Live Link
+
+> 🌐 **Live Demo:** [https://panscience-task-management-frontend.onrender.com/](https://panscience-task-management-frontend.onrender.com/)
+
+---
+
+# 🧪 Test Credentials
+
+### 👑 Admin Login
+- **Email:** testadmin@gmail.com 
+- **Password:** testadmin
+
+### 🙋 User Login
+- **Email:** testuser@gmail.com 
+- **Password:** testuser
+
+---
+
+# 📫 Postman Workspace
+
+> 🧪 API Collection (Public Workspace):  
+[https://web.postman.co/workspace/fed13a77-8303-47a7-90f0-e08617e1544e](https://web.postman.co/workspace/fed13a77-8303-47a7-90f0-e08617e1544e)
+
+---
 
 ## 🚀 Key Features
 
