@@ -12,7 +12,7 @@ const httpServer = createServer(app);
 console.log("CORS allowed origin:", FRONTEND);
 // CORS configuration
 const allowedOrigins = [
-  "https://task-management-mern-amber.vercel.app",
+  "https://panscience-task-management-frontend.onrender.com",
   "http://localhost:5173"
 ];
 
