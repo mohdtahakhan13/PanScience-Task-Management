@@ -26,7 +26,7 @@ GET_TASK_DOCUMENT: (taskId, docIndex) =>
   `${BACKEND_URL}/api/v1/task/${taskId}/documents/${docIndex}`,
     // Admin endpoints
     ADMIN_SIGNUP: `${BACKEND_URL}/api/v1/users/signup/admin`,
-    ADMIN_UPDATE_PASSWORD: `${BACKEND_URL}/api/v1//updatePassword`,
+    ADMIN_UPDATE_PASSWORD: `${BACKEND_URL}/api/v1/users/updatePassword`,
 };
 
 export default API_ENDPOINTS;
